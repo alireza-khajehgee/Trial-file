@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<title>همخوانی</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="hamkhany.css">
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#"  style="text-align:right;">همخوانی</a>
+ 
+ <button class="navbar-toggler" type="button"  style="align:left;"
+ data-toggle="collapse" data-target="#collapsibleNavbar">
+ 
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="text-align:right;">متون</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="text-align:right;">ورود</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="text-align:right;">درباره ما</a>
+      </li> 
+<li class="nav-item">
+        <a class="nav-link" href="#"  style="text-align:right;">خروج از سایت</a>
+      </li> 	  
+    </ul>
+  </div>  
+</nav>
+
+<div style="background-color:lightblue;" class="jumbotron text-center">
+<h1 style="text-align:center;">به نام خدا</h1>
+<h2 style="text-align:center;"> به سایت همخوانی خوش آمدید </h2>
+<p style="text-align:right;"></p>
+</div>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2 style="text-align:right;">متن  برای ترجمان</h2>
+      <h5 style="text-align:right;"> ترجمه تان را اضافه نمایید</h5>
+      
+      <br>
+      <form action="/action_page.php" method="POST">
+  <textarea name="message" style="width:auto; height:auto;">متنی برای ترجمه</textarea>
+  <br>
+   
+  <input type="submit"   value="متن اصلی" style="background-color:tomato;"/>
+</form>
+  <br>
+
+      <nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#"  style="text-align:right;">اطلاعات بیشتر</a>
+ 
+ <button class="navbar-toggler" type="button"  style="align:left;"
+ data-toggle="collapse" data-target="#collapsibleNavbar2">
+ 
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="text-align:right;">لایک ها</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="text-align:right;">متن های ممتاز</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="text-align:right;">متن های جدید</a>
+      </li> 
+<li class="nav-item">
+        <a class="nav-link" href="#"  style="text-align:right;">خروج</a>
+      </li> 	  
+    </ul>
+  </div>  
+</nav>
+     
+      <hr class="d-sm-none">
+    </div>
+
+ <div class="col-sm-8">
+      <h2  style="text-align:center;">متن اصلی</h2>
+      <h5 style="text-align:right;">تاریخ بارگذاری , دی ماه 20, 1399</h5>
+      <br>
+      <form action="/action_page.php" method="POST">
+  <textarea name="message" style="width:auto; height:auto;">متنی برای ترجمه</textarea>
+  <br>
+  
+  <input type="submit" value="متن اصلی" style="background-color:tomato;">
+</form>
+	  <br>
+	 <div class="alert alert-danger alert-dismissible fade show" style="text-align:right;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>!توجه</strong> !سعی کنید متن ها از دانسته های خودتان باشد 
+  </div> 
+	  
+	  <br>
+      <h2 style="text-align:right;">متن های دیگر</h2>
+      <h5 style="text-align:right;">تاریخ شروع بارگذاری, دی ماه 20, 1399</h5>
+      
+      <button class="open-button" onclick="openForm()">به مشکل برخوردید؟</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 style="text-align:right;">ارتباط با ما</h1>
+
+    <label for="msg" ></label>
+    <textarea placeholder="...چیزی بنویسید" name="msg" required style="text-align:right;"></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<div class="container" style="text-align:right;">
+ <div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>!نتیجه موفقیت آمیز</strong> .متن های شما در این قسمت با موفقیت ذخیره میشود
+  </div>
+      
+	  
+    </div>
+	  
+	  
+       </div>
+</div>
+<div class="jumbotron text-center" style="text-align:right;">
+  <p>Made by a group of students of Payame Noor University</p>
+  <p>cast:w3schools</p>
+  
+</div>	  
+</body>
+</html>
