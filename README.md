@@ -1,5 +1,5 @@
 # Trial-file
-trial file which which include some files help making a website
+trial file which include some files that helps us to make a website.
 # alireza-khajehgee
 some informations that I'm I'm collaborating with DR.AliRazavi-edu
 ## سایت همخوانی 
